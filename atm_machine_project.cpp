@@ -68,14 +68,14 @@ public: // public member functions
             mobile_No = mob_new; // and Update with new, if old matches
             cout << endl
                  << "Sucessfully Updated Mobile no.";
-            _getch(); // getch is to hold the screen ( untill user press any key )
+           // getch is to hold the screen ( untill user press any key )
         }
 
         else // Does not update if old mobile no. does not matches
         {
             cout << endl
                  << "Incorrect !!! Old Mobile no";
-            _getch(); // getch is to hold the screen ( untill user press any key )
+           // getch is to hold the screen ( untill user press any key )
         }
     }
 
@@ -89,14 +89,14 @@ public: // public member functions
                  << "Please Collect Your Cash";
             cout << endl
                  << "Available Balance :" << balance;
-            _getch(); // getch is to hold the screen(untill user press any key )
+             // getch is to hold the screen(untill user press any key )
         }
 
         else
         {
             cout << endl
                  << "Invalid Input or Insufficient Balance";
-            _getch(); // getch is to hold the screen ( untill user press any key )
+             // getch is to hold the screen ( untill user press any key )
         }
     }
 };
@@ -107,7 +107,7 @@ int main()
     int choice = 0, enterPIN; // enterPIN and enterAccountNo. ---> user authentication
     long int enterAccountNo;
 
-    system("cls");
+    
 
     // created User ( object )
     atm user1;
@@ -116,7 +116,7 @@ int main()
 
     do
     {
-        system("cls");
+       
 
         cout << endl
              << "****Welcome to ATM*****" << endl;
@@ -136,7 +136,7 @@ int main()
                 int amount = 0;
                 string oldMobileNo, newMobileNo;
 
-                system("cls");
+                
                 // user Interface
                 cout << endl
                      << "**** Welcome to ATM *****" << endl;
@@ -160,7 +160,7 @@ int main()
                     cout << endl
                          << "Your Bank balance is :" << user1.getBalance();
                     // getBalance is ... printing the users									bank balance
-                    _getch();
+                  
                     break;
 
                 case 2: // if user presses 2
@@ -183,7 +183,7 @@ int main()
                     cout << endl
                          << "-> Mobile No.:" << user1.getMobileNo();
                     // getting and printing user details
-                    _getch();
+                    
                     break;
 
                 case 4: //  if user presses 4
@@ -214,7 +214,7 @@ int main()
         {
             cout << endl
                  << "User Details are Invalid !!! ";
-            _getch();
+           
         }
     } while (1); // LOGIN		// condition will always TRUE and loop is										capable of running infinite times
 
